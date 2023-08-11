@@ -22,9 +22,9 @@ fs.readFile("./1.html", function(err, html){
         var ipaddr = obj.query
         const myJSON = JSON.stringify(obj);
 
-    
-        fs.appendFileSync("./1.json", myJSON + "\n")
-        fs.writeFileSync("./"+ipaddr + " " + obj.city+".json",myJSON);
+        console.log(obj)
+        // fs.appendFileSync("./1.json", myJSON + "\n")
+        // fs.writeFileSync("./"+ipaddr + " " + obj.city+".json",myJSON);
     
     
       })
